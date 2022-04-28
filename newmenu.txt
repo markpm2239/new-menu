@@ -1,0 +1,62 @@
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+
+        {
+            int price[] = { 10, 15, 20, 15, 5 };
+            string product[] = { "milk", "eggs", "pizza", "bread", "soda" };
+           
+            bool makepic = true;
+            int tally = 0;
+            string finish = "done";
+            while (makepic == true)
+            {
+
+                Console.WriteLine("Welcome to are store.");
+                Console.WriteLine("Please select what you want.");
+                Console.WriteLine("We are selling milk,eggs,pizza,bread,soda");
+                Console.WriteLine("Enter item");
+                string user = Console.ReadLine();
+                Console.WriteLine("Item Selected: " + user);
+                if (user == product[0])
+                {
+                    tally = tally + price[0];
+                    Console.WriteLine("Your total so far is " + tally);
+
+
+                }
+                else if (user == product[1])
+                {
+                    tally = tally + price[1]);
+                    Console.WriteLine("Your total so far is " + tally);
+                }
+                else if (user == product[2])
+                {
+                    tally = tally + price[2];
+                    Console.WriteLine("Your total so far is " + tally);
+                }
+                else if (user == product[3])
+                {
+                    tally = tally + price[3];
+                    Console.WriteLine("your total so far is " + tally);
+                }
+                else if (user == product[4])
+                {
+                    tally = tally + price[4];
+                    Console.WriteLine("your total so far is " + tally);
+                }
+                else if (user == finish)
+                {
+                    makepic = false;
+                    Console.WriteLine("The Total is " + tally);
+                    
+                }
+            }
+        }
+    }
+}
